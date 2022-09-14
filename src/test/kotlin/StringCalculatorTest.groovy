@@ -13,7 +13,7 @@ class StringCalculatorTest extends Specification {
         given:
             def emptyString = stringCalculator.add("")
         expect:
-        emptyString == 0
+            emptyString == 0
     }
 
     def "should return number when gives is number"() {
@@ -32,7 +32,7 @@ class StringCalculatorTest extends Specification {
 
     def "should add two numbers separated comma and new line tag"() {
         given:
-        def numbers = stringCalculator.add("1,2\n3")
+            def numbers = stringCalculator.add("1,2\n3")
         expect:
             numbers == 6
     }
